@@ -1,14 +1,14 @@
-# Dokumentacija za React development kurs
+# Dokumentacija za Data science kurs
 
 ### Uputstvo za lokalno pokretanje dokumentacije
 1. Klonirati repozitorijum
 ```bash
-git clone https://github.com/BHFFMMST/react-docs.git
+git clone https://github.com/BHFFMMST/datascience-docs.git
 ```
 
-2. Pozicionirati se u direktorijum `react-docs`
+2. Pozicionirati se u direktorijum `datascience-docs`
 ```bash
-cd react-docs
+cd datascience-docs
 ```
 
 3. Kreirati virtualno okruzenje i aktivirati ga
