@@ -1,517 +1,125 @@
-# Introduction to Web Development and Version Control System
+# Introduction to Data Science and Python
 
-## Šta je web development?
+Nauka o podacima (Data Science) je proučavanje podataka koje nam pomaže da izvučemo korisne uvide za donošenje poslovnih odluka. Data Science se zasniva na korištenju alata, tehnika i kreativnosti kako bi se otkrili skriveni uvidi unutar podataka. Ona spaja matematiku, računarstvo i stručnost u određenom području kako bi se riješili stvarni problemi u različitim oblastima.
 
-Web development je proces pravljenja i održavanja web stranica i aplikacija. Dakle, sve što radite na internetu – bilo da čitate vijesti, gledate YouTube, kupujete nešto online ili provjeravate raspored predavanja – sve to je rezultat web developmenta.
 
-Tu razlikujemo dva velika dijela:
+Data Science obrađuje neobrađene podatke, rješava poslovne probleme, pa čak i predviđa buduće trendove ili potrebe. Na primjer, iz ogromne količine sirovih podataka jedne kompanije, Data Science može pomoći da se odgovori na sljedeća pitanja:
 
-🔹 1. Frontend (klijentska strana)
+- Šta kupci žele?
 
-Frontend je sve ono što korisnik vidi i koristi – izgled stranice, dugmad, slike, boje, meni, tekst… To je vizuelni dio aplikacije.
+- Kako možemo poboljšati naše usluge?
 
-Tehnologije koje se koriste u frontendu su:
+- Koji će biti naredni trend u prodaji?
 
-HTML – pravi strukturu stranice. Zamislite HTML kao kostur web stranice – određuje gdje ide naslov, paragraf, dugme, slika.
+- Koliko zaliha je potrebno za nadolazeći praznik?
 
-CSS – daje stil i ljepotu toj strukturi. CSS određuje boje, raspored, fontove, margine. On uređuje kako stranica izgleda.
 
-JavaScript – daje stranici život. On omogućava da nešto reaguje kada kliknemo dugme, da se prikazuje/skriva sadržaj, da se automatski računa neka vrijednost.
+Ukratko, Data Science omogućava industrijama da donose pametnije, brže i informisanije odluke. Da bi se otkrili obrasci i postigli takvi uvidi, potrebno je imati stručnost u odgovarajućem području. Na primjer, uz stručnost u zdravstvu, data naučnik može predvidjeti rizike za pacijente i predložiti personalizovane tretmane.
 
------------------------------------------------------------------------------------
-# 2. Backend (serverska strana)
 
-S druge strane imamo backend – to je nevidljivi dio, koji korisnik ne vidi, ali bez kojeg ništa ne bi funkcionisalo.
+Data Science obuhvata ove ključne korake:
 
-Backend se brine o:
+- Prikupljanje podataka (Data Collection): Sakupljanje sirovih podataka iz različitih izvora, poput baza podataka, senzora ili interakcija korisnika.
 
--prijavi korisnika,
+- Čišćenje podataka (Data Cleaning): Osiguravanje da su podaci tačni, potpuni i spremni za analizu.
 
--spremanju podataka (npr. proizvoda, korisničkih računa),
+- Analiza podataka (Data Analysis): Primjena statističkih i računarskih metoda za prepoznavanje obrazaca, trendova ili odnosa.
 
--komunikaciji s bazom podataka,
+- Vizualizacija podataka (Data Visualization): Kreiranje grafikona, dijagrama i kontrolnih ploča radi jasnog predstavljanja nalaza.
 
--sigurnosti podataka.
+- Donošenje odluka (Decision-Making): Korištenje uvida za oblikovanje strategija, kreiranje rješenja ili predviđanje rezultata.
 
-Tehnologije koje se tu koriste su: Node.js, Python, PHP, Java, te baze podataka kao MySQL, MongoDB i drugi.
 
---------------------------------------------------------------------------------------------
-# Kako frontend i backend sarađuju?
+# Povećana potražnja za Data Science-om
+Data Science je jedno od najperspektivnijih i najtraženijih karijernih područja. S obzirom na ogroman i sve brže rastući obim podataka u svakoj industriji, potražnja za data naučnicima očekuje se da će porasti za 35% do 2025. godine. Današnji Data Science nije ograničen samo na analizu podataka ili razumijevanje prošlih trendova — uz pomoć vještačke inteligencije (AI), mašinskog učenja (ML) i drugih naprednih tehnika, Data Science može rješavati stvarne probleme i obučavati napredne sisteme bez ljudske intervencije.
 
-Frontend šalje zahtjev – npr. “Daj mi korisničke podatke”
 
-Backend provjerava bazu i vraća te podatke
+# Zašto je Data Science važan?
+U svijetu preplavljenom korisničkim podacima, Data Science ima ključnu ulogu u poticanju napretka i inovacija u svakoj industriji. Evo nekoliko razloga zašto je toliko važan:
 
-Frontend ih prikazuje korisniku
+- Pomaže u donošenju poslovnih odluka: Analizom podataka kompanije mogu razumjeti trendove i donositi odluke koje smanjuju rizik i povećavaju profit.
 
-## Šta je React.js?
+- Poboljšava efikasnost: Organizacije pomoću Data Science-a mogu prepoznati gdje gube vrijeme i resurse, te optimizovati procese.
 
-React je moderna JavaScript biblioteka koju je razvio Facebook.
+- Personalizuje iskustva: Omogućava kreiranje prilagođenih preporuka i ponuda koje povećavaju zadovoljstvo korisnika.
 
-Služi za kreiranje korisničkog interfejsa (UI), ali na efikasniji i modularniji način.
+- Predviđa budućnost: Pomoću podataka moguće je prognozirati trendove, potražnju i druge važne faktore.
 
-Zamislite web aplikaciju kao LEGO kuću:
+- Podstiče inovacije: Novi proizvodi i ideje često nastaju iz uvida dobijenih analizom podataka.
 
-Svaka LEGO kockica je komponenta – dugme, kartica, meni, forma.
+- Koristi društvu: Pomaže unapređenju javnih usluga poput zdravstva, obrazovanja i transporta kroz efikasnije raspoređivanje resursa.
 
-Komponente možemo više puta koristiti i kombinovati bez da svaki put pišemo sve ispočetka.
 
-React omogućava da aplikaciju gradimo iz tih malih, ponovo iskoristivih dijelova, što je savršeno za velike i kompleksne projekte.
+# Primjeri Data Science-a u stvarnom životu
+Data Science je prisutan svuda oko nas — od društvenih mreža i medicine do sportskih strategija poput kriketa ili FIFA takmičenja. Evo nekoliko konkretnih primjera:
 
+- 📱 Preporuke na društvenim mrežama
+Da li ste se ikada zapitali zašto vam se na Instagramu stalno prikazuju Reels videi koji odgovaraju vašim interesima?
+Ove platforme koriste Data Science za analizu vaših aktivnosti (lajkovi, komentari, gledanje sadržaja) i na osnovu toga kreiraju personalizovane preporuke koje odgovaraju vašem ukusu.
 
-## Kreiranje React projekta pomoću Vite-a 
+- 🩺 Rano otkrivanje bolesti
+Data Science može predvidjeti rizik od bolesti poput dijabetesa ili srčanih problema analizom medicinskih zapisa i životnih navika pacijenata.
+To omogućava doktorima da reaguju na vrijeme i poboljšaju kvalitet života. U budućnosti, Data Science bi mogao omogućiti otkrivanje bolesti poput tumora ili raka još prije nego što se simptomi pojave — analizom medicinske istorije i slikovnih podataka.
 
+- 🛍️ Preporuke i predviđanje potražnje u e-trgovini
+Platforme kao što su Amazon ili Flipkart koriste Data Science kako bi poboljšale iskustvo kupovine. Analizom istorije pretraga, kupovina i ponašanja korisnika, one preporučuju proizvode koji ih najviše zanimaju.
 
-Kako uopšte pravimo React aplikaciju?
+Takođe, pomoću analize prethodnih trendova i sezonskih obrazaca, mogu predvidjeti buduću potražnju za određenim proizvodima i prilagoditi zalihe.
 
-Nekada smo koristili alat koji se zvao Create React App (CRA). Međutim, danas postoji brži i lakši alat – Vite.
 
-🔹 Šta je Vite?
+# Primjene Data Science-a
+Data Science ima širok spektar primjena u različitim industrijama, mijenjajući način na koji one funkcionišu i ostvaruju rezultate. Neki primjeri uključuju:
 
-Vite (čita se: vit) je moderni build alat koji nam pomaže da brzo postavimo React aplikaciju.
+- Zdravstvo: Analiza podataka pacijenata, predviđanje bolesti, kreiranje personalizovanih terapija i optimizacija bolničkih operacija.
 
-Koristi nove tehnologije u pozadini (kao što je ESM – ECMAScript Modules).
+- Finansije: Otkrivanje prevara, upravljanje rizicima i kreiranje personalizovanih finansijskih preporuka.
 
-Mnogo je brži od starog CRA-a, naročito kada radimo lokalno u razvoju.
+- Trgovina: Razumijevanje ponašanja kupaca, preporuka proizvoda, optimizacija zaliha i unapređenje lanaca snabdijevanja.
 
-📌 Zamislite Vite kao alat koji umjesto nas postavlja sav osnovni React kod i folder strukturu – tako da ne moramo pisati sve od nule.
+- Tehnologija: Pokretanje inovacija poput pretraživača, virtuelnih asistenata i sistema preporuka.
 
-🔹 Priprema: Instalacija Node.js
+- Transport: Optimizacija ruta, upravljanje saobraćajem i prediktivno održavanje vozila.
 
-Da bismo koristili Vite i React, prvo moramo imati Node.js instaliran.
+- Obrazovanje: Kreiranje personalizovanih iskustava učenja, praćenje uspjeha učenika i poboljšanje administrativne efikasnosti.
 
-🔧 Node.js je program koji nam omogućava da u komandnoj liniji pokrećemo JavaScript i upravljamo projektima.
+- Zabava: Streaming platforme i kreatori sadržaja koriste Data Science za preporuku emisija, analizu preferencija gledalaca i optimizaciju isporuke sadržaja.
 
-✅ Kada instaliramo Node.js, automatski dobijamo i npm – to je alat koji nam omogućava instalaciju React-a i drugih paketa.
+- Marketing: Kompanije koriste Data Science za segmentaciju publike, predviđanje uspjeha kampanja i personalizaciju oglasa.
 
+# Industrije u kojima se koristi Data Science
+Data Science mijenja svaku industriju otključavanjem moći podataka. Evo nekoliko ključnih sektora u kojima ima značajnu ulogu:
 
-📥 Koraci:
+- Zdravstvo: Unapređuje rezultate liječenja kroz rano otkrivanje bolesti, personalizovane planove terapije i efikasnije bolničko upravljanje.
 
-Otvorimo https://nodejs.org
+- Finansije: Pomaže u otkrivanju prevara, upravljanju rizikom i pružanju prilagođenih finansijskih usluga.
 
-Skinemo verziju označenu kao "LTS" (Long Term Support)
+- Maloprodaja: Povećava zadovoljstvo kupaca kroz ciljane kampanje, optimizaciju zaliha i precizno predviđanje prodajnih trendova.
 
-Instaliramo je klikom "Next → Next" kao i bilo koji drugi program
+- Tehnologija: Pokreće napredne AI aplikacije poput glasovnih asistenata, pametnih pretraživača i uređaja za pametne domove.
 
+- Transport: Optimizuje putne rute, upravlja voznim parkovima i poboljšava saobraćajne sisteme radi sigurnijeg i bržeg putovanja.
 
+- Proizvodnja: Predviđa kvarove na opremi, unapređuje lance snabdijevanja i povećava efikasnost proizvodnje.
 
-## Kreiranje projekta pomoću Vite-a
+- Energija: Predviđa potrošnju energije, optimizuje njeno korištenje i pomaže u integraciji obnovljivih izvora.
 
-Nakon što imamo Node.js, otvaramo terminal (ili VS Code terminal) i kucamo sljedeće komande:
+- Poljoprivreda: Omogućava preciznu poljoprivredu praćenjem zdravlja usjeva, boljim upravljanjem resursima i povećanjem prinosa.
 
-npm create vite@latest my-react-app -- --template react
-cd my-react-app
-npm install
-npm run dev
+# Važne vještine u Data Science-u
+Data naučnici trebaju kombinaciju tehničkih i mekih vještina kako bi uspješno radili u ovom području. Da bi se započelo sa Data Science-om, važno je savladati osnove poput matematike i osnovnog programiranja. U nastavku su navedene ključne vještine potrebne za uspješnu karijeru u Data Science-u:
 
-Šta ove komande rade?
+- Programiranje: Poznavanje programskih jezika kao što su Python, R ili SQL je ključno za efikasnu analizu i obradu podataka.
 
-npm create vite@latest my-react-app → kaže: napravi novi projekat koristeći Vite, pod nazivom my-react-app, i neka koristi React kao šablon
+- Statistika i matematika: Snažno razumijevanje statistike i linearne algebre pomaže u prepoznavanju obrazaca u podacima i izgradnji prediktivnih modela.
 
-cd my-react-app → ulazimo u naš novi folder s projektom
+- Mašinsko učenje (Machine Learning): Znanje algoritama i okvira mašinskog učenja neophodno je za kreiranje inteligentnih rješenja zasnovanih na podacima.
 
-npm install → instaliramo sve zavisnosti (biblioteke koje su potrebne za rad)
+- Vizualizacija podataka (Data Visualization): Sposobnost predstavljanja rezultata kroz alate poput Tableau, Power BI ili Matplotlib omogućava jasnu i razumljivu prezentaciju uvida.
 
-npm run dev → pokrećemo razvojni server, i aplikacija se otvara u browseru
+- Obrada podataka (Data Wrangling): Vještine u čišćenju, transformisanju i pripremi sirovih podataka za analizu ključne su za očuvanje kvaliteta podataka.
 
-🖥️ Nakon npm run dev, terminal nam da lokalni link, npr. http://localhost:5173, koji otvorimo u browseru i odmah vidimo početnu React stranicu.
+- Alati za velike podatke (Big Data Tools): Poznavanje alata kao što su Hadoop, Spark ili cloud platforme pomaže u efikasnom radu s velikim skupovima podataka.
 
-# Otvaranje projekta u VS Code
+- Kritičko razmišljanje (Critical Thinking): Analitičke sposobnosti i kreativno rješavanje problema neophodni su za otkrivanje korisnih i primjenjivih uvida.
 
-Ako koristimo Visual Studio Code, projekat možemo otvoriti ovako:
-
-code .
-
-
-To će otvoriti trenutni folder u VS Code-u, i možemo odmah početi uređivati kod.
-
-📌 Ako ova komanda ne radi, možda treba dodati VS Code u PATH tokom instalacije – to se može naknadno uključiti.
-
-## Pitanja i dodatni savjeti
-
-Ako dobijete grešku tokom instalacije: provjerite da li imate Node.js i da li ste u pravom folderu.
-
-Ako je npm run dev uspio, to znači da sve radi i spremni ste da počnete s uređivanjem aplikacije.
-
-
-
-# 📁 Struktura React projekta (Vite) – Objašnjenje
-
- Kada smo uspješno pokrenuli React aplikaciju pomoću Vite-a, hajde da zajedno pogledamo šta smo to zapravo dobili u projektu i čemu šta služi.
-
-## 📁 1. node_modules/
-
-Ovo je folder koji sadrži sve biblioteke i pakete koje je naš projekat instalirao pomoću npm install.
-
-Ne diramo ga ručno!
-
-Automatski se kreira.
-
-Zato se dodaje u .gitignore kako ne bi išao na GitHub jer je ogroman.
-
-## 📁 2. public/
-
-Ovaj folder sadrži staticke fajlove koji se ne obrađuju od strane React-a. Sve što stavimo ovdje biće dostupno direktno u browseru.
-
-Npr. slike, favicon (ikonica stranice), dokumenti.
-
-📌 Primjer: ako ovdje dodamo fajl logo.png, možemo mu pristupiti putem URL-a: http://localhost:5173/logo.png.
-
-## 📄 3. index.html
-
-Ovo je HTML šablon naše aplikacije. Iako radimo s React-om (koji koristi JavaScript), cijela aplikacija se ipak “uliva” u ovaj jedan HTML fajl.
-
-🔍 Pogledaj liniju:
-
-<div id="root"></div>
-
-
-→ React ubacuje kompletan sadržaj aplikacije unutar ovog div elementa. To se dešava u fajlu main.jsx.
-
-🎤 “Iako ne pišemo puno HTML-a direktno ovdje, ovaj fajl je ključan jer predstavlja osnovu aplikacije.”
-
-## 📁 4. src/ – Najvažniji folder
-
-Ovdje se nalazi sav naš React kod. To je mjesto gdje pišemo komponente, stilove, logiku aplikacije.
-
-## 📄 main.jsx
-
-Ovo je ulazna tačka aplikacije. Ovdje React povezuje App.jsx sa index.html.
-
-U kodu obično vidimo:
-
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
-
-
-To znači: uzmi <App /> komponentu i ubaci je u div koji ima id="root" – upravo onaj u index.html.
-
-## 📄 App.jsx
-
-Ovo je glavna komponenta aplikacije – možemo je zamisliti kao srce svega.
-
-Ovdje prikazujemo sve ostale komponente: navigaciju, kartice, forme, itd.
-
-Svaki novi dio koji pravimo, na kraju uđe ovdje.
-
-Svaki React projekat ima App kao centralni prikaz, a ostale komponente dodajemo i prikazujemo unutar njega.
-
-## 📁 assets/
-
-Folder za slike, ikone, stilove koje koristimo u aplikaciji. Na slici vidimo npr. react.svg – to je logo koji se pojavljuje na početnoj stranici aplikacije.
-
-## 📄 App.css i index.css
-
-App.css – stilovi koji se odnose na App.jsx komponentu.
-
-index.css – globalni stilovi koji važe za cijelu aplikaciju.
-
-Možemo ih uređivati, dodavati svoje klase i praviti svoj dizajn.
-
-
-# 📄 Ostali važni fajlovi
-
-## 📄 .gitignore
-
-Ovdje pišemo koje fajlove i foldere ne želimo da šaljemo na GitHub. Na primjer:
-
-node_modules
-dist
-.env
-
-## 📄 package.json
-
-Vrlo važan fajl. On sadrži:
-
--naziv aplikacije
-
--sve instalirane biblioteke (dependencies)
-
--skripte koje možemo pokretati (npr. npm run dev)
-
--verziju projekta
-
-Ukoliko želite da vidite šta je instalirano u projektu, samo otvorite ovaj fajl i pogledajte dio dependencies.
-
-## 📄 vite.config.js
-
-Konfiguracija za Vite alat. Nećemo ga puno dirati za osnovne projekte, ali kad budemo radili naprednije stvari kao aliasi, proxy, pluginovi – ovo je mjesto gdje se sve podešava.
-
-## 📄 README.md
-
-Tekstualni fajl u kojem možemo napisati osnovne informacije o projektu. Na GitHub-u se on prikazuje automatski na početnoj stranici repozitorija.
-
-
-# Git i GitHub – Osnove verzionisanja
-
-## Šta je Git?
-
-Git je verzioni sistem – alat koji pamti svaku promjenu koju napravimo u projektu.
-
-Zamislite ga kao vremensku mašinu:
-
-Svaka promjena koju napravimo se zabilježi kao snapshot.
-
-Možemo se vratiti unazad, vidjeti ko je šta promijenio, kada, i zašto.
-
-Idealno za timski rad – više ljudi može raditi istovremeno, a da se ne pregazi kod.
-
-📌 Git omogućava programerima da znaju:
-
-✅ Ko je napravio promjenu
-
-✅ Kada je napravljena
-
-✅ Šta je tačno promijenjeno
-
-✅ Zašto je promjena uvedena (kroz opis – commit message)
-
-
-## 🔹 Šta je GitHub?
-
-GitHub je online platforma koja čuva Git projekte u cloud-u.
-
-Tu pohranjujemo svoj kod i dijelimo ga s drugima
-
-Možemo raditi u timovima, otvarati zadatke (issues), praviti grane (branches), recenzirati kod (pull requests)
-
-
-## Kako Git funkcioniše?
-
-Zamislimo da radimo na dokumentu:
-
-Kada napišemo dio koda, pripremimo ga za snimanje (git add)
-
-Onda snimimo promjenu s opisom (git commit)
-
-I po želji pošaljemo to na GitHub (git push)
-
-Git čuva istoriju svake te promjene u obliku commit-a, a svi commit-i zajedno čine istoriju projekta.
-
-## 📄 Glavne komande u Git-u
-Komanda	                    Šta radi
-git init	                  Inicijalizuje prazan Git repozitorij
-git add .	                  Priprema sve fajlove za commit
-git commit -m "opis"	      Snima promjene sa porukom
-git status	                Prikazuje trenutno stanje fajlova
-git clone <url>	            Klonira GitHub repozitorij na računar
-git branch	                Prikazuje (ili pravi) grane
-git merge	                  Spaja promjene iz druge grane
-git pull	                  Preuzima promjene s GitHub-a
-git push	                  Šalje promjene na GitHub
-
-
-## Branching (grane)
-
-Svaka grana je paralelna linija razvoja.
-
-main je glavna verzija.
-
-Možemo napraviti grane za testiranje, nove funkcije, ispravke grešaka itd.
-
-git branch nova-funkcija
-git checkout nova-funkcija
-
-
-Branching je kao da pravite kopiju projekta da biste eksperimentisali bez straha da nešto pokvarite.
-
-## Commit snapshoti
-
-Svaki commit je kao fotografija trenutnog stanja projekta. Zahvaljujući tome možemo:
-
--Vratiti se na bilo koji prethodni commit
-
--Pratiti promjene po datumu i autoru
-
--Pregledati historiju promjena
-
-## GitHub u praksi
-
-Kreiramo repozitorij na GitHub-u (bez README ako već imamo fajlove)
-
-Na računaru koristimo:
-
-git init
-git remote add origin https://github.com/ime/repo.git
-git add .
-git commit -m "Initial commit"
-git branch -M main
-git push -u origin main
-
-Nakon toga, sve naredne promjene pratimo i šaljemo pomoću add → commit → push.
-
-## Pull Request i saradnja
-
-Kada radimo u timu, pravimo granu i tražimo odobrenje putem Pull Requesta.
-
-Tu tim može:
-
-dodati komentare,
-
-zatražiti izmjene,
-
-spojiti promjene u main.
-
-
-# Praktična Git i GitHub vježba
-
-🎯 Cilj: Naučiti kako se kreira Git repozitorij, kako se prate promjene, i kako se sve šalje na GitHub.
-
-🔹 1. Inicijalizacija Git repozitorija
-
-U VS Code terminalu (ili običnom terminalu) kucati:
-
-git init
-
-
-📝 Ovo kreira .git folder i omogućava Git-u da prati promjene u ovom projektu.
-
-🔹 2. Dodavanje fajlova za praćenje
-git add .
-
-
-📌 Ova komanda dodaje sve fajlove u tzv. “staging area” – znači priprema ih za snimanje.
-
-Ako želimo samo jedan fajl: git add imeFajla.ext
-
-🔹 3. Kreiranje prvog commita
-git commit -m "Initial commit"
-
-
-Ovim čuvamo stanje projekta s opisom. Poželjno je da opis bude kratak i jasan.
-
-## 4. Kreiranje GitHub repozitorija
-
-➡️ Otići na https://github.com
-
-➡️ Kliknuti New Repository
-➡️ Nazvati ga npr. my-first-react-app
-➡️ Ne dodavati README jer ga već imamo lokalno
-➡️ Kliknuti Create repository
-
-## 5. Povezivanje lokalnog repozitorija sa GitHub-om
-git remote add origin https://github.com/korisnickoime/my-first-react-app.git
-
-## 6. Postavljanje glavne grane (main)
-git branch -M main
-
-## 7. Slanje koda na GitHub
-git push -u origin main
-
-
- Ako se traži username i password, korisnici treba da koriste GitHub token umjesto lozinke (može se generisati iz GitHub Settings > Developer Settings > Tokens).
-
-
-Otvoriti GitHub repozitorij – učesnici će sada vidjeti svoj kod online!
-
-
-## Dodatni zadaci za samostalan rad
-
-Napravi novu granu:
-
-git checkout -b nova-funkcija
-
-
-Uredi jedan fajl i commitaj promjenu:
-
-git add .
-git commit -m "Dodana nova funkcija"
-
-
-Vrati se na main i spoji promjene (napredno):
-
-git checkout main
-git merge nova-funkcija
-
------------------------------------------------------------------------------------------------------------------------------------
-# Q&A i Zajednički problemi 
-
-
-## 1. Šta ako zaboravimo git add?
-
- Problem:
-Napravili ste izmjenu u fajlu, uradili git commit, ali promjena nije snimljena.
-
-Objašnjenje:
-Git može da commit-uje samo ono što je prethodno dodano sa git add. Ako to preskočimo, promjene ostaju „nevidljive“ za Git.
-
-Rješenje:
-
-Provjerite stanje:
-
-git status
-
-
-Vidjet ćete koji su fajlovi izmijenjeni, ali nisu „staged“.
-
-Dodajte ih i uradite commit:
-
-git add naziv_fajla
-git commit -m "Dodaj pravi opis"
-
-
- Savjet: uvijek koristite git status prije commita da provjerite šta je dodano.
-
-## 2. Kako vratiti stariju verziju fajla?
-a) Vratiti fajl na stanje iz zadnjeg commit-a:
-
-Ako želite odbaciti lokalne promjene:
-
-git restore naziv_fajla
-
-
-Ova komanda će izbrisati sve izmjene u fajlu i vratiti ga na posljednju verziju iz repozitorija.
-
-b) Vratiti cijeli projekat na raniji commit:
-
-Pronađi ID commita:
-
-git log
-
-
-Vrati se na željeni commit (privremeno):
-
-git checkout <commit_id>
-
-
- Napomena: ovo vas stavlja u „detached HEAD“ mod, što znači da gledate staru verziju i da ne treba praviti nove promjene direktno u tom stanju.
-
-Ako želiš da napraviš novu granu iz tog stanja:
-
-git checkout -b fix-old-version
-
-## 3. Kako se kreira .gitignore?
-
- .gitignore je fajl u koji pišemo imena fajlova i foldera koje ne želimo da Git prati.
-
- Najčešće se koristi da ignorišemo:
-
-node_modules/
-
-dist/
-
-.env
-
-privremene .log fajlove
-
-Kako ga napraviti:
-
-U korijenu projekta klikni New File
-
-Nazovi ga .gitignore (bez ekstenzije)
-
-U njega upiši:
-
-node_modules/
-dist/
-.env
-*.log
-
-
-Git će automatski ignorisati sve što je tu navedeno.
-
-Ovo je korisno da ne šaljemo stvari koje ne trebaju biti na GitHub-u – kao što su ogromni folderi, lokalne konfiguracije ili tajni podaci.
-
+- Komunikacija: Sposobnost da se složeni rezultati i analize objasne jednostavnim jezikom osobama koje nisu tehnički stručnjaci predstavlja veliku prednost.
